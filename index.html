@@ -399,22 +399,26 @@
   .musician-item a { color: var(--gold); text-decoration: none; }
   .musician-item a:hover { color: var(--gold-light); }
 
-  .stream-btn {
+  .stream-btn,
+  .album-info .stream-btn,
+  .album-info a.stream-btn {
     display: inline-block;
     margin-top: 32px;
     padding: 16px 40px;
     background: var(--gold);
-    color: #000;
+    color: #000 !important;
     font-family: 'Cinzel', serif;
     font-size: 12px;
     letter-spacing: 0.25em;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: none !important;
     font-weight: 700;
     transition: all 0.3s;
   }
-  .stream-btn:hover {
+  .stream-btn:hover,
+  .album-info a.stream-btn:hover {
     background: var(--gold-light);
+    color: #000 !important;
     box-shadow: 0 8px 30px rgba(201,168,76,0.4);
     transform: translateY(-2px);
   }
